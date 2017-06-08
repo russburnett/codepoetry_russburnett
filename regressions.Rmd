@@ -1,0 +1,16 @@
+---
+title: "regressions"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Exercise
+
+```{r}
+library(datasets)
+data(cars)
+summary(lm(speed ~ dist, data = cars))
+```
